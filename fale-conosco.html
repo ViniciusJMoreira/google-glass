@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>A Revolução do Google Glass</title>
+    <link rel="stylesheet" type="text/css" href="_css/estilo.css"/>
+    <link rel="stylesheet" type="text/css" href="_css/form.css">
+    <script type="text/javascript" src="_javascript/funcoes.js"></script>
+    <script>
+        function calc_tot() {
+   
+            var qnt = parseint(document.getElementById('xqnt').value);
+            var tot = qnt * 1500;
+            document.getElementById('xtot').value = tot;
+        }
+    </script>
+</head>
+<body>
+<div id="interface">
+    <header id="cabecalho">
+        <hgroup>
+            <h1>Google Glass</h1>
+            <h2>A revolução do Google está chegando</h2>
+        </hgroup>
+
+        <img id="icone" src="_imagens/contato.png"/>
+    
+        <nav id="menu">
+            <h1>Menu Principal</h1>
+            <ul>
+                <li onmouseover="mudaFoto('_imagens/home.png')" onmouseout="mudaFoto('_imagens/contato.png')"><a href="index.html">Home</a></li>
+                <li onmouseover="mudaFoto('_imagens/especificacoes.png')" onmouseout="mudaFoto('_imagens/contato.png')"><a href="specs.html">Especificações</a></li>
+                <li onmouseover="mudaFoto('_imagens/fotos.png')" onmouseout="mudaFoto('_imagens/contato.png')"><a href="fotos.html">Fotos</a></li>
+                <li onmouseover="mudaFoto('_imagens/multimidia.png')" onmouseout="mudaFoto('_imagens/contato.png')"><a href="multimidia.html">Multimídia</a></li>
+                <li onmouseover="mudaFoto('_imagens/contato.png')" onmouseout="mudaFoto('_imagens/contato.png')"><a href="fale-conosco.html">Fale conosco</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="corpo-full">
+        <header id="cabecalho-artigo">
+            <hgroup>
+                <h3>Fale Conosco > Contato</h3>
+                <h1>Formulário de Contato</h1>
+                <h2 class="direita">por Vinícius J. Moreira</h2>
+            </hgroup>
+        </header>
+    </section>
+    <form id="formcont" method="post" oninput="calc_tot()">
+        <fieldset id="usuario">
+            <legend>Identificação do Usuário</legend>
+            <p><label for="xname">Nome:</label>
+            <input type="text" name="yname" id="xname" size="30" maxlength="40" placeholder="Digite seu nome completo"/></p>
+            <p><label for="xpass">Password:</label>
+            <input type="password" name="ypass" id="xpass" size="10" maxlength="8" placeholder="Máximo 8 dígitos"/></p>
+            <p><label for="xmail">Email:</label>
+            <input type="E-mail" name="ymail" id="xmail" size="30" maxlength="40" value="@gmail.com"/></p>
+        <fieldset id="sexo">
+            <legend>Sexo</legend>
+            <p><input type="radio" name="sexo" id="xmasc"><label for="xmasc" id="m" />Masculino</label></p>
+            <p><input type="radio" name="sexo" id="xfem"><label for="xfem" id="f" />Feminino</label></p>
+        </fieldset>
+            <p><label for="xdata">Data de Nascimento:</label>
+            <input type="date" name="ydata" id="xdata"></p>
+        </fieldset>
+        <fieldset id="endereco">
+            <legend>Endereço do Usuário</legend>
+            <p><label for="xlog">Logadouro:</label>
+            <input type="text" name="ylog" id="xlog" size="30" maxlength="40" placeholder="Digite seu endereço"/></p>
+            <p><label for="xnum">Número:</label>
+            <input type="number" name="ynum" id="xnum" min="1" max="99999" size="10"/></p>
+            <p><label for="xest">Estado:</label>
+            <input type="text" list="estados" name="yest" id="xest"/></p>
+                <datalist id="estados">
+                    <option value="RO">Rondônia</option>
+                    <option value="AC">Acre</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="RR">Roraima</option>
+                    <option value="PA">Pará</option>
+                    <option value="AP">Amapá</option>
+                    <option value="TO">Tocantins</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="PI">Piauí</option>
+                    <option value="CE">Ceará</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="BA">Bahia</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="PR">Paraná</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="GO">Goiás</option>
+                    <option value="DF">Distrito Federal</option>
+
+                </datalist>
+
+            <p><label for="xcid">Cidade:</label>
+            <input type="text" name="ycid" id="xcid" size="20" maxlength="18" placeholder="Cidade atual"/></p>
+        </fieldset>
+
+        <fieldset id="mensagem">
+            <legend>Mensagem do Usuário</legend>
+            <p><label for="xurg">Grau de Urgência:</label>
+            <input type="range" name="yurg" id="xurg" min="0" max="10" step="2"></p>
+            <p><label for="xmens">Mensagem:</label>
+            <textarea name="ymens" id="xmens" cols="80" rows="5" placeholder="Deixe aqui sua mensagem"></textarea></p>
+        </fieldset>
+
+        <fieldset id="pedido">
+            <legend>Quero um Google Glass</legend>
+            <p><input type="checkbox" name="yped" id="xped" checked/>
+            <label for="xped">Gostaria de adquirir um Google Glass quando disponível</label></p>
+            <p><label for="xcor">Cor:</label>
+            <input type="color" name="ycor" id="xcor" value="#00008B"/></p>
+            <p><label for="xqnt">Quantidade:</label>
+            <input type="number" id="xqnt" min="0" max="5" value="0"/></p>
+            <p><label for="xtot">Preço Total: R$</label>
+            <input type="text" size="8" id="xtot" placeholder="Total a pagar" readonly /></p>
+        </fieldset>
+        <input type="image" name="yenviar" id="xenviar" src="_imagens/botao-enviar.png"/>
+    </form>
+
+    <footer id="rodape">
+
+        <p>Copyright 2022 - by Vinícius J.Moreira </br>
+        Facebook | Twitter</p>
+
+    </footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,290 @@
+@charset "utf-8";
+@font-face {
+
+			font-family: 'fontelogo2';
+			src: url("../_fonts/TitilliumWeb-Regular.ttf");
+}
+
+@font-face {
+
+			font-family:'fontelogo';
+			src: url("../_fonts/DMSans-Regular.ttf");
+}
+
+body {
+
+			background-color: lightgray;
+			color: rgba(0, 0, 0, 1);
+} 
+
+.direita {
+
+			text-align: right;
+}
+
+div#interface {
+
+			width: 1300px;
+			background-color: white;
+			margin: 15px auto 15px auto;
+			box-shadow: 0px 0px 10px rgba(0, 0, 0,.5);
+			padding: 10px;
+}
+
+header#cabecalho img#icone { /*imagem glass*/
+
+			position: absolute;
+			left: 1090px;
+			top: 70px;
+}
+
+header#cabecalho {
+
+			border-bottom: 2px lightgray solid;
+			height: 190px;
+			background: url(../_imagens/glass-logo-peq.jpg)no-repeat 0px 120px;
+}
+
+header#cabecalho h1 {
+
+			font-family: 'fontelogo', sans-serif;
+			font-size: 35pt;
+			word-spacing: 0px;
+			color: #606060;
+			text-shadow: 1px 1px 1px rgba(0, 0, 0, .6);
+			padding: 0px;
+			margin-bottom: 10px;
+			margin-top: 5px;
+
+
+
+}
+
+header#cabecalho h2 {
+
+			font-family: 'fontelogo2', sans-serif;
+			font-size: 15pt;
+			color: #888888;
+			padding: 0px;
+			margin-top: 0px;
+}
+
+p {
+
+			font-size: 13pt;
+			text-align: justify;
+			text-indent: 5px;
+}
+
+/* FORMATAÇÃO DE IMAGEM COM LEGENDA */
+
+figure.foto-legenda {
+			position: relative;
+			border: 8px solid white;
+			box-shadow: 1px 1px 4px black;
+			display: inline-block;
+
+}
+figure.foto-legenda img {
+
+			width: 100%;
+			height: 100%;
+			
+}
+
+figure.foto-legenda figcaption {
+
+			position: absolute;
+			top: 0px;
+			background-color: rgba(0, 0, 0, .5);
+			color: white;
+			width: 100%;
+			height: 100%;
+			padding: 10px;
+			box-sizing: border-box;
+			opacity: 0;
+			transition: opacity 1s;
+
+} 
+
+figure.foto-legenda:hover figcaption {
+			opacity: 1;
+}
+
+/* FORMATAÇÃO DO MENU */
+
+nav#menu h1 {
+
+			display: none;
+}
+
+nav#menu {
+
+	display: block;
+}
+
+nav#menu ul {
+
+			list-style: none;
+			text-transform: uppercase;
+			position: absolute;
+			top: -15px;
+			left: 690px;
+}
+
+nav#menu li {
+
+			display: inline-block;
+			background-color: lightgray;
+			padding: 10px;
+			margin: 2px;
+			transition: background-color 1s;
+
+}
+
+nav#menu li:hover {
+
+			background-color: darkgray;
+			
+}
+
+nav#menu a:hover {
+
+			color: white;
+			text-decoration: overline;
+}
+
+nav#menu a {
+
+			text-decoration: none;
+			color: black;
+}
+
+section#corpo {
+
+			
+			width: 800px;
+			float: left;
+			border-right: 2px lightgray solid;
+			padding: 10px;
+}
+
+section#corpo h2 {
+
+			font-size: 18pt;
+			color: dimgray;
+			background-color: lightgray;
+			padding: 5px 0px 5px 5px;
+			margin: 10px 0px 10px 0px;
+
+}
+
+header#cabecalho-artigo h1{
+
+			font-family:'fontelogo2', sans-serif;
+			font-size: 25pt;
+			color: #606060;
+			margin-bottom: 0px;
+			margin-top: 0px;
+}
+
+header#cabecalho-artigo h2 {
+
+			font-size: 13pt;
+			background-color: white;
+			margin: 0px;
+}
+
+header#cabecalho-artigo h3 {
+
+			font-size: 13pt;
+			color: dimgray;
+			margin-bottom: 5px;
+}
+
+table#tabelaspec {
+
+			border: 2px solid lightgray;
+			border-spacing: 0px;
+			margin-right: auto;
+			margin-left: auto;
+}
+
+table#tabelaspec td {
+
+			border: 2px solid #606060;
+			padding: 10px;
+			vertical-align: middle;
+}
+
+table#tabelaspec td.ce {
+
+			color: white;
+			background-color: #606060;
+			text-align: right;
+			vertical-align: top;
+			font-weight: bolder;
+}
+
+table#tabelaspec td.cd {
+
+			background-color: lightgray;
+			text-align: left;
+}
+
+table#tabelaspec caption {
+
+			color: gray;
+			font-size: 16pt;
+			font-weight: bolder;
+}
+
+table#tabelaspec caption span {
+
+			display: block;
+			float: right;
+			color: black;
+			font-size: 8pt;
+			margin-top: 11px;
+
+}
+
+aside#lateral {
+
+			
+			width: 450px;
+			float: right;
+			padding: 10px;
+			background-color: #dddddd;
+			padding: 10px;
+			margin-top: 10px;
+			box-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
+}
+
+aside#lateral h1 {
+
+			font-family: 'fontelogo2', sans-serif;
+			font-size: 25pt;
+			color: #606060;
+			margin-top: 0px;
+
+}
+
+aside#lateral h2{
+
+			font-size: 18pt;
+			color: white;
+			background-color: #606060;
+			padding: 10px;
+}
+
+footer#rodape {
+
+			clear: both;
+			border-top: 2px lightgray solid;
+}
+
+footer#rodape p {
+
+			text-align: center;
+}
