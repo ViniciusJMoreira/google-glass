@@ -1,2 +1,2 @@
 # projeto-glass-html5
- Projeto Glass Html CursoemVIdeo
+ Projeto Glass Html Curso em Video
