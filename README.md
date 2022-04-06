@@ -1,2 +1,2 @@
 # projeto.google.glass.html
-Projeto Glass Html Curso em VIdeo
+Projeto Glass Html Curso em Video
