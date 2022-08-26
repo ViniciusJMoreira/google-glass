@@ -1,0 +1,191 @@
+@charset "UTF-8";
+
+/* CORPO */
+main.corpo {
+	grid-area: 2 / 1 / 3 / 2;
+	position: relative;
+}
+
+.hgroup-header-body h1 {
+	font-family: var(--font-montS);
+	font-size: 1.8em;
+	color: var(--darkG);
+	text-transform: uppercase;
+	margin: 20px;
+	text-align: center;
+}
+
+.hgroup-header-body h2, .artigos-noticias h2 {
+	font-family: var(--font-montS);
+	color: var(--yellow);
+	text-transform: uppercase;
+	font-size: 2em;
+	padding: 5px 0px 5px 5px;
+	margin: 20px 0px;
+}
+
+.hgroup-header-body h3 {
+	margin: 15px;
+	color: var(--darkG);
+}
+
+/* ARTIGOS */
+article.artigos-noticias {
+	display: flex;
+	justify-content: space-around;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	padding: 20px;
+}
+
+.container-noticias {
+	width: 800px;
+	height: auto;
+	margin-bottom: 50px;
+}
+
+article.art-3 {
+	background-color: var(--lightG);
+}
+
+article p {
+	font-size: 1.1em;
+	text-align: justify;
+	text-indent: 5px;
+	color: var(--darkG);
+}
+
+/* FORMATAÇÃO DE IMAGEM COM LEGENDA */
+
+figure.foto-legenda {
+    position: relative;
+	width: 600px;
+	height: auto;
+	border: 8px solid var(--corW);
+	box-shadow: 1px 1px 5px var(--corB);
+	margin-bottom: 50px;
+}
+
+figure.foto-legenda img {
+	width: 100%;
+	height: 100%;	
+}
+
+figure.foto-legenda figcaption {
+    font-size: .9em;
+	color: var(--darkG) ;
+    text-align: center;
+}
+
+input.btn-foto-legenda-next {
+    position: absolute;
+    top: 50%;
+    right: 2px;
+    width: 25px;
+    height: 25px;
+    font-weight: 700;
+    color: var(--lightG);
+    background-color: var(--yellow);
+    border: none;
+    cursor: pointer;
+}
+
+input.btn-foto-legenda-back {
+    position: absolute;
+    top: 50%;
+    left: 2px;
+    width: 25px;
+    height: 25px;
+    font-weight: 700;
+    color: var(--lightG);
+    background-color: var(--yellow);
+    border: none;
+    cursor: pointer;
+}
+.btn {
+	font-family: var(--font-montS);
+	text-transform: uppercase;
+	font-weight: 700;
+	border: none;
+	padding: .8em 1.2em;
+	background-color: var(--yellow);
+	color: var(--lightG);
+	margin: 20px 0;
+	cursor: pointer;
+	margin-bottom: 30px ;
+}
+
+/* ARTIGO 3 */
+div.container-fig {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin: 20px 0;
+}
+div.container-fig figure {
+	width: 300px;
+	height: auto;
+}
+div.container-fig img {
+	margin: 10px;
+}
+div.container-fig h3 {
+	font-family: var(--font-montS);
+	text-transform: uppercase;
+	color: var(--darkG);
+	margin: 10px;
+	font-size: 1.1em;
+}
+div.container-fig p{
+	text-align: center;
+}
+
+/* ARTIGO 4 */
+.art-4 h2 {
+	font-size: 1.8em;
+}
+.span-confira {
+	margin-top: 20px;
+	color: var(--darkG);
+	font-weight: 700;
+}
+
+#lateral {
+	grid-area: 3 / 1 / 4 / 2;
+}
+
+aside#lateral {	
+	width: 450px;
+	padding: 10px;
+	background-color: var(--lightG);
+	padding: 10px;
+	margin-top: 10px;
+	box-shadow: 2px 2px 2px var(--opacityB) ;
+}
+
+aside#lateral h1 {
+	font-family: 'fontelogo2', sans-serif;
+	font-size: 25pt;
+	color: var(--darkG);
+	margin-top: 0px;
+
+}
+
+aside#lateral h2{
+	font-size: 18pt;
+	color: var(--corW);
+	background-color: var(--darkG);
+	padding: 10px;
+}
+
+footer#rodape {
+	grid-area: 4 / 1 / 5 / 2;
+	clear: both;
+	border-top: 2px var(--lightG) solid;
+}
+
+footer#rodape p {
+	text-align: center;
+}

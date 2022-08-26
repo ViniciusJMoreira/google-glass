@@ -4,63 +4,102 @@
 <head>
 	<meta charset="utf-8">
 	<title>A Revolução do Google Glass</title>
-	<link rel="stylesheet" type="text/css" href="css/estilo.css"/>
-	<link rel="stylesheet" type="text/css" href="css/specs.css"/>
+	<link rel="stylesheet" href="css/all.css"/>
+	<link rel="stylesheet" href="css/specs.css"/>
+	<link rel="stylesheet" href="css/index.css">
 </head>
 <script type="text/javascript" src="javascript/funcoes.js"></script>
 <body>
-<div id="interface">
-	<header id="cabecalho">
-		<hgroup>
-			<h1>Google Glass</h1>
-			<h2>A revolução do Google está chegando</h2>
-		</hgroup>
+<main class="interface">
 
-		<img id="icone" src="imagens/especificacoes.png"/>
-	
-		<nav id="menu">
-			<h1>Menu Principal</h1>
+	<header class="cabecalho">
+		<nav class="menu">
+			<figure class="logo-glass">
+				<img src="../imagens/glass-logo-peq.png" alt="">
+			</figure>
 			<ul>
-				<li onmouseover="mudaFoto('imagens/home.png')" onmouseout="mudaFoto('imagens/especificacoes.png')"><a href="index.html">Home</a></li>
-				<li onmouseover="mudaFoto('imagens/especificacoes.png')" onmouseout="mudaFoto('imagens/especificacoes.png')"><a href="specs.html">Especificações</a></li>
-				<li onmouseover="mudaFoto('imagens/fotos.png')" onmouseout="mudaFoto('imagens/especificacoes.png')"><a href="fotos.html">Fotos</a></li>
-				<li onmouseover="mudaFoto('imagens/multimidia.png')" onmouseout="mudaFoto('imagens/especificacoes.png')"><a href="multimidia.html">Multimídia</a></li>
-				<li onmouseover="mudaFoto('imagens/contato.png')" onmouseout="mudaFoto('imagens/especificacoes.png')"><a href="fale-conosco.html">Fale conosco</a></li>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="specs.html">Especificações</a></li>
+				<li><a href="fotos.html">Fotos</a></li>
+				<li><a href="multimidia.html">Multimídia</a></li>
 			</ul>
 		</nav>
-	</header>
-
-	<section id="corpo-full">
-		<header id="cabecalho-artigo">
+		<menu class="div-title">
 			<hgroup>
-				<h3>Glass > Especificações</h3>
-				<h1>Raio-X no Google Glass</h1>
-				<h2 class="direita">por Vinícius J. Moreira</h2>
-				<h3>Atualizado em 01/Maio/2013</h3>
+				<h1>Especificações Enterprise Edition 2</h1>
+				<h3>Atualizado 24/08/2022 por <strong>Vinicius J. Moreira</strong></h3>
 			</hgroup>
-		</header>
+		</menu>
+	</header>
+	<main class="corpo">
+		<article class="artigos-noticias">
+			<table id="tabelaspec">
+				<caption>Tabela Técnica</caption>
+				<tr><td class="ce">SoC</td><td class="cd">Qualcomm Snapdragon XR1</td></tr>
+				<tr><td class="ce">OS</td><td class="cd">Android Open Source Project 8.1 (Oreo)</td></tr>
+				<tr rowspan="2" ><td class="ce">Memory / Storage</td><td class="cd">3GB LPDDR4 <br>32GB eMMC Flash</td></tr>
+				<tr><td class="ce">Wi-Fi</td><td class="cd">IEEE 802.11a/g/b/n/ac, dual-band</td></tr>
+				<tr><td class="ce">Bluetooth</td><td class="cd">5.0</td></tr>
+				<tr><td class="ce">Camera</td><td class="cd">8 Megapixel color sensor
+				<br>83° diagonal field of view
+				<br>f/2.4 aperture
+				<br>Fixed focus, best focus at 0.6m
+				<br>Up to 1080p30 video</td></tr>
+				<tr><td class="ce">Display</td><td class="cd">640 pixel x 360 pixel RGB</td></tr>
+				<tr><td class="ce">Audio out</td><td class="cd">Mono Speaker
+				<br>USB audio
+				<br>Bluetooth (HFP supported)</td></tr>
+				<tr><td class="ce">Microphones</td><td class="cd">3 near field beam-forming microphones</td></tr>
+				<tr><td class="ce">Touch</td><td class="cd">Multi-touch gesture touchpad</td></tr>
+				<tr><td class="ce">Charging / Data</td><td class="cd">USB PD 2.0 compliant (fast charge up to 1.5 A @ 5 V)
+				<br>USB 2.0 data transfer
+				<br>USB-C compliant connector</td></tr>
+				<tr><td class="ce">LED</td><td class="cd">Privacy (camera) green LED, power (rear) white LED</td></tr>
+				<tr><td class="ce">Battery</td><td class="cd">800 mA·h (2880 C)</td></tr>
+				<tr><td class="ce">Inertial Sensors</td><td class="cd">3-axis Accelerometer
+				<br>3-axis Gyroscope
+				<br>3-axis Magnetometer</td></tr>
+				<tr><td class="ce">Materials</td><td class="cd">Resin nylon (pod)</td></tr>
+				<tr><td class="ce">Ruggedization</td><td class="cd">IP53 (Resistant to water spray and limited dust ingression)</td></tr>
+				<tr><td class="ce">Operating <br> temperature</td><td class="cd">0° C to 35° C (32° F to 95° F)</td></tr>
+				<tr><td class="ce">Storage temperature</td><td class="cd">-20° C to 45° C (-4° F to 113° F)</td></tr>
+				<tr><td class="ce">Relative humidity</td><td class="cd">5% to 95% noncondensing</td></tr>
+				<tr><td class="ce">Weight without frame</td><td class="cd">46 g</td></tr>
+				<tr><td class="ce">Dimensions without frame</td><td class="cd">212 mm x 57 mm x 29 mm (unfolded)
+				<br>182 mm x 55 mm x 29 mm (folded)</td></tr>
+			</table>
+		</article>
 
-		<p>Clique em qualquer área destacada da imagem para ter mais informações sobre os recursos do Google Glass. Qualquer ponto vermelho vai te levar a um lugar cheio de novas informações.</p>
-	</section>
-
-	<section id=conteudo>
-		<img src="imagens/glass-esquema-marcado.jpg" usemap="#mapglass">
-		<map name="mapglass">
-			<area shape="poly" coords="183,219,264,208,266,241,185,253" href="google-glass.html#tela" target="janela"/>
-			<area shape="circle" coords="157,243,10" href="google-glass.html#camera" target="janela"/>
-			<area shape="poly" coords="27,145,81,216,83,250,27,165" href="google-glass.html#sensores" target="janela">
-			<area shape="circle" coords="76,51,11" href="google-glass.html#gadgets" target="janela">
-		</map>
-		<iframe src="google-glass.html" name="janela" id="frame-specs"></iframe>
-	</section>
-
-
+		<div class="container-fig">
+			<figure>
+				<img src="imagens/focused-icon.png" alt="">
+				<figcaption>
+					<h3>Simples de desenvolver</h3>
+					<p>O Glass Enterprise Edition 2 é executado na plataforma de código aberto Android, o que o torna rápido e fácil de desenvolver.</p>
+				</figcaption>
+			</figure>
+			<figure>
+				<img src="imagens/focused-icon.png" alt="">
+				<figcaption>
+					<h3>Excelente em vídeo e transmissão ao vivo</h3>
+					<p>Com uma câmera de 8MP, o Glass Enterprise Edition 2 permite que os funcionários transmitam vídeos de “ponto de vista” nítidos de assistentes remotos especializados por Wi-Fi.</p>
+				</figcaption>
+			</figure>
+			<figure>
+				<img src="imagens/focused-icon.png" alt="">
+				<figcaption>
+					<h3>CPU aprimorada</h3>
+					<p>O Glass Enterprise Edition 2 foi aprimorado com o Snapdragon XR1 da Qualcomm, que permite melhor desempenho e suporte para casos de uso de visão computacional integrada e aprendizado de máquina.</p>
+				</figcaption>
+			</figure>
+		</div>
+	</main>
 	<footer id="rodape">
 
 		<p>Copyright 2022 - by Vinícius J.Moreira </br>
 		Facebook | Twitter</p>
 
 	</footer>
-</div>
+</main>
 </body>
 </html>
