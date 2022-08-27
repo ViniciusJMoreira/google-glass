@@ -28,15 +28,11 @@ body {
 	font-family: var(--font-mulish);
 	background-color: var(--lightG);
 	font-weight: 500;
-} 
-
-.direita {
-	text-align: right;
 }
 
 /* BODY  */
 main.interface {
-	max-width: 1100px;
+	width: 80vw;
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-template-rows: 80vh repeat(3, auto);

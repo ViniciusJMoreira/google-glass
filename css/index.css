@@ -78,42 +78,47 @@ figure.foto-legenda figcaption {
     text-align: center;
 }
 
-input.btn-foto-legenda-next {
-    position: absolute;
+input.btn-foto-legenda-next , input.btn-foto-legenda-back {
+	position: absolute;
     top: 50%;
-    right: 2px;
-    width: 25px;
+	width: 25px;
     height: 25px;
     font-weight: 700;
     color: var(--lightG);
     background-color: var(--yellow);
     border: none;
     cursor: pointer;
+	transition: 200ms linear;
+}
+
+input.btn-foto-legenda-next:hover , input.btn-foto-legenda-back:hover {
+	background-color: var(--darkG);
+}
+
+input.btn-foto-legenda-next {
+    right: 2px;
 }
 
 input.btn-foto-legenda-back {
-    position: absolute;
-    top: 50%;
     left: 2px;
-    width: 25px;
-    height: 25px;
-    font-weight: 700;
-    color: var(--lightG);
-    background-color: var(--yellow);
-    border: none;
-    cursor: pointer;
 }
+
 .btn {
 	font-family: var(--font-montS);
 	text-transform: uppercase;
 	font-weight: 700;
 	border: none;
-	padding: .8em 1.2em;
+	width: 190px;
+	height: 50px;
 	background-color: var(--yellow);
 	color: var(--lightG);
 	margin: 20px 0;
 	cursor: pointer;
 	margin-bottom: 30px ;
+	transition: 200ms linear;
+}
+.btn:hover {
+	background-color: var(--darkG);
 }
 
 /* ARTIGO 3 */
@@ -124,13 +129,16 @@ div.container-fig {
 	flex-wrap: wrap;
 	margin: 20px 0;
 }
+
 div.container-fig figure {
 	width: 300px;
 	height: auto;
 }
+
 div.container-fig img {
 	margin: 10px;
 }
+
 div.container-fig h3 {
 	font-family: var(--font-montS);
 	text-transform: uppercase;
@@ -138,6 +146,7 @@ div.container-fig h3 {
 	margin: 10px;
 	font-size: 1.1em;
 }
+
 div.container-fig p{
 	text-align: center;
 }
@@ -146,6 +155,7 @@ div.container-fig p{
 .art-4 h2 {
 	font-size: 1.8em;
 }
+
 .span-confira {
 	margin-top: 20px;
 	color: var(--darkG);
@@ -188,4 +198,30 @@ footer#rodape {
 
 footer#rodape p {
 	text-align: center;
+}
+
+.scroll {
+	position: fixed;
+	right: 2%;
+	top: 80%;
+	width: 50px;
+	height: 50px;
+	font-family: var(--font-montS);
+	font-weight: 700;
+	border: none;
+	background-color: var(--yellow);
+	color: var(--lightG);
+	border-radius: 50%;
+	cursor: pointer;
+	animation: move 1s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite;
+	transition: 200ms linear;
+}
+
+.scroll:hover {
+	background-color: var(--darkG);}
+
+@keyframes move {
+	50% {
+		transform: translateY(5px);
+	}
 }
