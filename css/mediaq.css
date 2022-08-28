@@ -11,18 +11,10 @@
 
 @media (max-width: 1000px) {
 
-    /* ALL */
-    menu.div-title h1{
-        font-size: 2em;
-    }
-
 
     /* INDEX */
     main.interface {
         grid-template-rows: 60vh repeat(3, auto); ;
-    }
-    .hgroup-header-body h1 {
-        font-size: 1.5em;
     }
     div.container-fig {
         flex-direction: column;
