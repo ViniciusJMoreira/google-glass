@@ -43,9 +43,6 @@
 
 @media (max-width: 768px) {
     /* INDEX */
-    .hgroup-header-body h2, .artigos-noticias h2 {
-        font-size: 1.5em;
-    }
     .container-noticias {
         width: 500PX;
     }
