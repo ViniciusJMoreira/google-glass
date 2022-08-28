@@ -35,6 +35,9 @@
 
 @media (max-width: 768px) {
     /* INDEX */
+    main.interface {
+        grid-template-rows: 50vh repeat(3, auto); ;
+    }
     .container-noticias {
         width: 500PX;
     }
