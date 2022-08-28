@@ -103,31 +103,13 @@ input.btn-foto-legenda-back {
     left: 2px;
 }
 
-.btn {
-	font-family: var(--font-montS);
-	text-transform: uppercase;
-	font-weight: 700;
-	border: none;
-	width: 190px;
-	height: 50px;
-	background-color: var(--yellow);
-	color: var(--lightG);
-	margin: 20px 0;
-	cursor: pointer;
-	margin-bottom: 30px ;
-	transition: 200ms linear;
-}
-.btn:hover {
-	background-color: var(--darkG);
-}
-
 /* ARTIGO 3 */
 div.container-fig {
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
-	margin: 20px 0;
+	margin-top: 20px;
 }
 
 div.container-fig figure {
@@ -160,68 +142,4 @@ div.container-fig p{
 	margin-top: 20px;
 	color: var(--darkG);
 	font-weight: 700;
-}
-
-#lateral {
-	grid-area: 3 / 1 / 4 / 2;
-}
-
-aside#lateral {	
-	width: 450px;
-	padding: 10px;
-	background-color: var(--lightG);
-	padding: 10px;
-	margin-top: 10px;
-	box-shadow: 2px 2px 2px var(--opacityB) ;
-}
-
-aside#lateral h1 {
-	font-family: 'fontelogo2', sans-serif;
-	font-size: 25pt;
-	color: var(--darkG);
-	margin-top: 0px;
-
-}
-
-aside#lateral h2{
-	font-size: 18pt;
-	color: var(--corW);
-	background-color: var(--darkG);
-	padding: 10px;
-}
-
-footer#rodape {
-	grid-area: 4 / 1 / 5 / 2;
-	clear: both;
-	border-top: 2px var(--lightG) solid;
-}
-
-footer#rodape p {
-	text-align: center;
-}
-
-.scroll {
-	position: fixed;
-	right: 2%;
-	top: 80%;
-	width: 50px;
-	height: 50px;
-	font-family: var(--font-montS);
-	font-weight: 700;
-	border: none;
-	background-color: var(--yellow);
-	color: var(--lightG);
-	border-radius: 50%;
-	cursor: pointer;
-	animation: move 1s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite;
-	transition: 200ms linear;
-}
-
-.scroll:hover {
-	background-color: var(--darkG);}
-
-@keyframes move {
-	50% {
-		transform: translateY(5px);
-	}
 }

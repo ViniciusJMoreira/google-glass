@@ -1,5 +1,13 @@
-function mudaFoto() {
-	document.querySelector(".cabecalho").opacity = (.5);
+function mudaLinkin(foto) {
+	document.querySelector("#linkin").src = foto;
+}
+
+function mudaInst(foto) {
+	document.querySelector("#inst").src = foto;
+}
+
+function mudaTwt(foto) {
+	document.querySelector("#twt").src = foto;
 }
 
 const scrolltotop = () => {

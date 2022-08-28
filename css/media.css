@@ -27,3 +27,31 @@ video#filme {
 	top: 5px;
 	left: 81px;
 }
+
+#lateral {
+	grid-area: 3 / 1 / 4 / 2;
+}
+
+aside#lateral {	
+	width: 450px;
+	padding: 10px;
+	background-color: var(--lightG);
+	padding: 10px;
+	margin-top: 10px;
+	box-shadow: 2px 2px 2px var(--opacityB) ;
+}
+
+aside#lateral h1 {
+	font-family: 'fontelogo2', sans-serif;
+	font-size: 25pt;
+	color: var(--darkG);
+	margin-top: 0px;
+
+}
+
+aside#lateral h2{
+	font-size: 18pt;
+	color: var(--corW);
+	background-color: var(--darkG);
+	padding: 10px;
+}

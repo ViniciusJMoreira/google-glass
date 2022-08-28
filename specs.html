@@ -15,7 +15,7 @@
 	<header class="cabecalho">
 		<nav class="menu">
 			<figure class="logo-glass">
-				<img src="../imagens/glass-logo-peq.png" alt="">
+				<img src="imagens/glass-logo-peq.png" alt="">
 			</figure>
 			<ul>
 				<li><a href="index.html">Home</a></li>
@@ -32,6 +32,7 @@
 		</menu>
 	</header>
 	<main class="corpo">
+		<button  class="scroll" onclick="scrolltotop()">TOP</button>
 		<article class="artigos-noticias">
 			<table id="tabelaspec">
 				<caption>Tabela Técnica</caption>
@@ -95,10 +96,23 @@
 		</div>
 	</main>
 	<footer id="rodape">
+		<nav class="menu-footer">
+			<ul class="ul-links">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="fotos.html">Fotos</a></li>
+				<li><a href="multimidia.html">Multimídia</a></li>
+			</ul>
+			<ul class="ul-redes">
+				<li><a onmouseout="mudaLinkin('imagens/linkin-ico.yel.png')" onmouseover="mudaLinkin('imagens/linkin-ico.png')" href=""><img id="linkin" src="imagens/linkin-ico.yel.png" alt=""></a></li>
 
-		<p>Copyright 2022 - by Vinícius J.Moreira </br>
-		Facebook | Twitter</p>
+				<li><a onmouseout ="mudaTwt('imagens/twt-ico.yel.png')" onmouseover="mudaTwt('imagens/twt-ico.png')" href=""><img id="twt" src="imagens/twt-ico.yel.png" alt=""></a></li>
 
+				<li><a onmouseout="mudaInst('imagens/inst-ico.yel.png')" onmouseover="mudaInst('imagens/inst-ico.png')" href=""><img id="inst" src="imagens/inst-ico.yel.png" alt=""></a></li>
+			</ul>
+		</nav>
+		<figure class="fig-logo-google">
+			<p><em>Todos os Créditos </em></p><img class="logo-google" src="imagens/logo-google-gig.png" alt="">
+		</figure>
 	</footer>
 </main>
 </body>
