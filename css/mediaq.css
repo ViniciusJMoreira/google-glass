@@ -18,6 +18,9 @@
 
 
     /* INDEX */
+    main.interface {
+        grid-template-rows: 60vh repeat(3, auto); ;
+    }
     .hgroup-header-body h1 {
         font-size: 1.5em;
     }
@@ -39,10 +42,6 @@
 }
 
 @media (max-width: 768px) {
-    /* ALL */
-    menu.div-title h1{
-        font-size: 1.6em;
-    }
     /* INDEX */
     .hgroup-header-body h2, .artigos-noticias h2 {
         font-size: 1.5em;
@@ -52,8 +51,5 @@
     }
     article p {
         font-size: 1em;
-    }
-    main.interface {
-        grid-template-rows: 70vh repeat(3, auto); ;
     }
 }
