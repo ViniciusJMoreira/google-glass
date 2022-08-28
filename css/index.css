@@ -60,7 +60,7 @@ article p {
 
 figure.foto-legenda {
     position: relative;
-	width: 600px;
+	width: 800px;
 	height: auto;
 	border: 8px solid var(--corW);
 	box-shadow: 1px 1px 5px var(--corB);
