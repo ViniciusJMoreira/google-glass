@@ -24,9 +24,6 @@
     div.container-fig figure  {
         padding: 30px 0; 
     }
-    .container-noticias {
-        width: 600PX;
-    }
     .ul-links a {
         display: flex;
         flex-direction: column;
