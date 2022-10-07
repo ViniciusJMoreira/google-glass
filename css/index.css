@@ -59,7 +59,7 @@ article p {
 /* FORMATAÇÃO DE IMAGEM COM LEGENDA */
 
 figure.foto-legenda {
-    position: relative;
+  position: relative;
 	width: 80%;
 	height: auto;
 	border: 8px solid var(--corW);
@@ -74,7 +74,7 @@ figure.foto-legenda img {
 
 figure.foto-legenda figcaption {
     font-size: .9em;
-	color: var(--darkG) ;
+		color: var(--darkG) ;
     text-align: center;
 }
 
